@@ -88,7 +88,7 @@ func (ExampleController) Get(c echo.Context) error {
 }
 ```
 如果是不同服务间传递Error，可以利用这一特性返回包括调用链的错误信息，这样可以快速定位错误服务，具体可参考
-https://github.com/hublabs/common/blob/master/api/errors_test.go#L33
+https://github.com/devarchi33/common/blob/master/api/errors_test.go#L33
 最后返回的结果示例：
 ```
 {

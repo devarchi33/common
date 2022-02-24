@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 
+	"github.com/devarchi33/goutils/behaviorlog"
+	"github.com/devarchi33/goutils/kafka"
 	jsoniter "github.com/json-iterator/go"
-	"github.com/pangpanglabs/goutils/behaviorlog"
-	"github.com/pangpanglabs/goutils/kafka"
 	"github.com/sirupsen/logrus"
 )
 

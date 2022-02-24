@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/hublabs/common/ncode"
-	"github.com/pangpanglabs/goutils/test"
+	"github.com/devarchi33/common/ncode"
+	"github.com/devarchi33/goutils/test"
 )
 
 func Test(t *testing.T) {

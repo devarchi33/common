@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/pangpanglabs/goutils/test"
+	"github.com/devarchi33/goutils/test"
 )
 
 var testToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJjb2xsZWFndWUiLCJ0ZW5hbnRDb2RlIjoiaHVibGFicyIsImNvbGxlYWd1ZUlkIjoxMjR9.ZDUrsd1ZtH4pQA14EAJdTQUhEACBfd5TsAXqITpab1s"

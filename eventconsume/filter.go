@@ -6,13 +6,13 @@ import (
 	"log"
 	"runtime"
 
-	"github.com/hublabs/common/auth"
+	"github.com/devarchi33/common/auth"
+	"github.com/devarchi33/goutils/behaviorlog"
+	"github.com/devarchi33/goutils/ctxdb"
+	"github.com/devarchi33/goutils/echomiddleware"
+	"github.com/devarchi33/goutils/kafka"
 
-	"github.com/go-xorm/xorm"
-	"github.com/pangpanglabs/goutils/behaviorlog"
-	"github.com/pangpanglabs/goutils/ctxdb"
-	"github.com/pangpanglabs/goutils/echomiddleware"
-	"github.com/pangpanglabs/goutils/kafka"
+	"xorm.io/xorm"
 )
 
 type FilterFunc func(ctx context.Context) error

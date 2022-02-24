@@ -1,12 +1,12 @@
 package api
 
 import (
-	"fmt"
 	"errors"
-	"testing"
+	"fmt"
 	"net/http"
+	"testing"
 
-	"github.com/pangpanglabs/goutils/test"
+	"github.com/devarchi33/goutils/test"
 )
 
 func TestErrorsTest(t *testing.T) {
@@ -59,19 +59,19 @@ func TestErrorsTest(t *testing.T) {
 		test.Equals(t, "serviceC: Unknown error", err.Error())
 	})
 	t.Run("err-custom", func(t *testing.T) {
-		expError :=ErrorTemplate{
-			Code:20001,
-			Message:"Task exists in task group",
+		expError := ErrorTemplate{
+			Code:    20001,
+			Message: "Task exists in task group",
 		}
 		expStatus := http.StatusBadRequest
 
 		SetErrorMessagePrefix("serviceD")
 		customErr := errors.New("There is a task in the task group, please delete the task in the task group first")
-		template := NewTemplate(20001,"Task exists in task group",http.StatusBadRequest)
+		template := NewTemplate(20001, "Task exists in task group", http.StatusBadRequest)
 		actError := template.New(customErr)
 		test.Equals(t, expError.Code, actError.Code)
 		test.Equals(t, expError.Message, actError.Message)
 		test.Equals(t, expStatus, actError.Status())
-		test.Equals(t, fmt.Sprintf("serviceD: %v",customErr), actError.Error())
+		test.Equals(t, fmt.Sprintf("serviceD: %v", customErr), actError.Error())
 	})
 }
