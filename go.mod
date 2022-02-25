@@ -1,6 +1,6 @@
 module github.com/devarchi33/common
 
-go 1.17
+go 1.15
 
 require (
 	github.com/devarchi33/goutils v0.0.0-20220224034954-99d5250970e0
