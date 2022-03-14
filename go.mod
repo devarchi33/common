@@ -3,7 +3,7 @@ module github.com/devarchi33/common
 go 1.17
 
 require (
-	github.com/devarchi33/goutils v1.9.5
+	github.com/devarchi33/goutils v1.9.6
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/json-iterator/go v1.1.12
 	github.com/labstack/echo/v4 v4.7.1
