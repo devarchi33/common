@@ -3,7 +3,7 @@ module github.com/devarchi33/common
 go 1.17
 
 require (
-	github.com/devarchi33/goutils v0.0.0-20220314054633-7d8439bdeda0
+	github.com/devarchi33/goutils v1.8.8
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/json-iterator/go v1.1.12
 	github.com/labstack/echo/v4 v4.7.1
@@ -33,7 +33,7 @@ require (
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/pierrec/lz4 v2.6.1+incompatible // indirect
 	github.com/rcrowley/go-metrics v0.0.0-20201227073835-cf1acfcdf475 // indirect
-	github.com/satori/go.uuid v1.2.1-0.20181028125025-b2ce2384e17b // indirect
+	github.com/satori/go.uuid v1.2.0 // indirect
 	github.com/syndtr/goleveldb v1.0.0 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasttemplate v1.2.1 // indirect
